@@ -20,8 +20,11 @@
 
 <div align="center">
 
-### 메인 페이지 & 게시글 상세 & AI 챗봇 도우미
-<img src="./docs/images/main.png" width="40%" alt="메인">  <img src="./docs/images/detail.png" width="40%" alt="상세"> <img src="./docs/images/chatbot.png" width="200" alt="챗봇">
+### 메인 페이지 & 게시글 상세
+<img src="./docs/images/main.png" width="40%" alt="메인">  <img src="./docs/images/detail.png" width="40%" alt="상세"> 
+
+### AI 챗봇 도우미
+<img src="./docs/images/chatbot.png" width="200" alt="챗봇">
 
 </div>
 
