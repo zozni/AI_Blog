@@ -10,8 +10,6 @@
 ![MySQL](https://img.shields.io/badge/MySQL-8.0-4479A1?style=flat-square&logo=mysql&logoColor=white)
 ![Docker](https://img.shields.io/badge/Docker-Compose-2496ED?style=flat-square&logo=docker&logoColor=white)
 
-[데모 보기](#-주요-화면) | [기능 소개](#-주요-기능) | [설치 방법](#-빠른-시작)
-
 </div>
 
 ---
@@ -21,7 +19,7 @@
 <div align="center">
 
 ### 메인 페이지 & 게시글 상세
-<img src="./docs/images/main.png" width="40%" alt="메인">  <img src="./docs/images/detail.png" width="40%" alt="상세"> 
+<img src="./docs/images/main.png" width="50%" alt="메인">  <img src="./docs/images/detail.png" width="50%" alt="상세"> 
 
 ### AI 챗봇 도우미
 <img src="./docs/images/chatbot.png" width="200" alt="챗봇">
@@ -61,59 +59,6 @@ Backend   →  Spring Boot 3.2 + JPA + MySQL 8.0 + Gradle
 AI        →  FastAPI + Python + LLM
 DevOps    →  Docker Compose + CORS
 ```
-
----
-
-
-## 📂 프로젝트 구조
-```
-ai_blog/
-├── ai/                # FastAPI 챗봇 서버
-├── backend/           # Spring Boot API
-├── frontend/          # React 앱
-└── docker-compose.yml # MySQL 컨테이너
-```
-
-<details>
-<summary>📁 상세 구조 보기</summary>
-```
-ai_blog/
-├── ai/
-│   ├── chatbot_api.py          # FastAPI 챗봇 서버
-│   ├── word_cloud_generator.py # 워드클라우드 생성
-│   └── requirements.txt
-│
-├── backend/
-│   ├── src/main/java/com/aiblog/
-│   │   ├── model/              # Entity
-│   │   ├── dto/                # Request/Response
-│   │   ├── repository/         # JPA Repository
-│   │   ├── service/            # 비즈니스 로직
-│   │   ├── controller/         # REST API
-│   │   └── config/             # 설정
-│   └── build.gradle
-│
-└── frontend/
-    ├── src/
-    │   ├── components/         # 재사용 컴포넌트
-    │   ├── pages/              # 페이지
-    │   └── services/           # API 호출
-    └── package.json
-```
-
-</details>
-
----
-
-## 🗄️ 주요 API
-
-| Method | Endpoint | 설명 |
-|--------|----------|------|
-| GET | `/api/posts` | 게시글 목록 (페이징/검색/필터) |
-| POST | `/api/posts` | 게시글 작성 |
-| GET | `/api/posts/{id}` | 게시글 상세 |
-| POST | `/api/chat` | AI 챗봇 질문 |
-| GET | `/api/wordcloud/image` | 워드클라우드 이미지 |
 
 ---
 
